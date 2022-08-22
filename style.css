@@ -17,3 +17,6 @@ header {
 .card {
   border: 2px solid rgb(214, 199, 170);
 }
+.select-btn:disabled {
+  background-color: gray;
+}

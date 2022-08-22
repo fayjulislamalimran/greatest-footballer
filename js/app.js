@@ -9,6 +9,7 @@ for (selector of selectBtn) {
 
     if (count > 5) {
       const selected = event.target.removeAttribute("disabled");
+
       alert(" Can't add more 5 player");
       return;
     }
