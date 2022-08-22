@@ -1,22 +1,21 @@
 let count = 0;
-const selectBtn = document.getElementsByClassName('select-btn');
+const selectBtn = document.getElementsByClassName("select-btn");
 
 for (selector of selectBtn) {
-  selector.addEventListener('click', function (event) {
+  selector.addEventListener("click", function (event) {
     count++;
     const playerName = event.target.parentNode.parentNode.childNodes[1].innerText;
-    const selected = event.target.setAttribute('disabled', '');
+    const selected = event.target.setAttribute("disabled", "");
 
     if (count > 5) {
       const selected = event.target.removeAttribute("disabled");
-      alert("You Can't Added More Then 5 Player");
+      alert(" Can't add more 5 player");
       return;
     }
 
-    const selectedPlayer = document.getElementById('selected-total');
+    const selectedPlayer = document.getElementById("selected-total");
     const totalSelectedPlayer = parseFloat(selectedPlayer.innerText);
     selectedPlayer.innerText = count;
-
 
     const mainContainer = document.getElementById("body-container");
 
@@ -27,5 +26,5 @@ for (selector of selectBtn) {
        <td>${playerName}</td>
        `;
     mainContainer.appendChild(bodyContainer);
-  })
+  });
 }
