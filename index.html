@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greatest Footballer of All Time</title>
+    <!-- Cnd  -->
+    <link rel="stylesheet" href="style.css" />
+    <link href="npm/daisyui_2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-800">
+    <main class="mb-36">
+      <!--This is main section start -->
+      <section class="lg:grid lg:grid-cols-12 gap-4 mx-5 md:mx-32 mt-5">
+        <!-- Left side  -->
+        <div class="grid md:grid-cols-3 lg:col-span-8 gap-4">
+          <!-- Card 1  -->
+          <div class="bg-black text-white shadow-xl card">
+            <div>
+              <img class="w-full" src="image/lionel-messi.jpg" alt="Shoes" />
+            </div>
+            <div class="card-body">
+              <h2 class="text-2xl font-semibold text-center">Lionel Messi</h2>
+              <p class="text-center">
+                <span class="font-semibold">99 Goals</span> |
+                <span class="font-semibold">120 Assist</span>
+              </p>
+              <div class="text-center mt-2">
+                <button class="w-full text-white font-semibold text-2xl py-2 hover:bg-sky-700 bg-sky-500 text-center my-5 select-btn">Select</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2  -->
+          <div class="bg-black text-white shadow-xl card">
+            <div>
+              <img class="w-full" src="image/neymar-jr.jpg" alt="Shoes" />
+            </div>
+            <div class="card-body">
+              <h2 class="text-2xl font-semibold text-center">Neymar Jr</h2>
+              <p class="text-center">
+                <span class="font-semibold">69 Goals</span> |
+                <span class="font-semibold">100 Assist</span>
+              </p>
+              <div class="text-center mt-2">
+                <button class="w-full text-white font-semibold text-2xl py-2 hover:bg-sky-700 bg-sky-500 text-center my-5 select-btn" id="btn">Select</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3  -->
+          <div class="bg-black text-white shadow-xl card">
+            <div>
+              <img class="w-full" src="image/kylian-mbappe.jpg" alt="Shoes" />
+            </div>
+            <div class="card-body">
+              <h2 class="text-2xl font-semibold text-center">Kylian Mbappé</h2>
+              <p class="text-center">
+                <span class="font-semibold">11 Goals</span> |
+                <span class="font-semibold">113 Assist</span>
+              </p>
+              <div class="text-center mt-2">
+                <button class="w-full text-white font-semibold text-2xl py-2 hover:bg-sky-700 bg-sky-500 text-center my-5 select-btn" id="btn">Select</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4  -->
+          <div class="bg-black text-white shadow-xl card">
+            <div>
+              <img class="w-full" src="image/vítor-machado.jpg" alt="Shoes" />
+            </div>
+            <div class="card-body">
+              <h2 class="text-2xl font-semibold text-center">Vítor Machado</h2>
+              <p class="text-center">
+                <span class="font-semibold">36 Goals</span> |
+                <span class="font-semibold">120 Assist</span>
+              </p>
+              <div class="text-center mt-2">
+                <button class="w-full text-white font-semibold text-2xl py-2 hover:bg-sky-700 bg-sky-500 text-center my-5 select-btn" id="btn">Select</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5  -->
+          <div class="bg-black text-white shadow-xl card">
+            <div>
+              <img class="w-full" src="image/sergio-ramos.jpg" alt="Shoes" />
+            </div>
+            <div class="card-body">
+              <h2 class="text-2xl font-semibold text-center">Sergio Ramos</h2>
+              <p class="text-center">
+                <span class="font-semibold">36 Goals</span> |
+                <span class="font-semibold">120 Assist</span>
+              </p>
+              <div class="text-center mt-2">
+                <button class="w-full text-white font-semibold text-2xl py-2 hover:bg-sky-700 bg-sky-500 text-center my-5 select-btn" id="btn">Select</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6  -->
+          <div class="bg-black text-white shadow-xl card">
+            <div>
+              <img class="w-full" src="image/renato-sanches.jpg" alt="Shoes" />
+            </div>
+            <div class="card-body">
+              <h2 class="text-2xl font-semibold text-center">Renato Sanche</h2>
+              <p class="text-center">
+                <span class="font-semibold">36 Goals</span> |
+                <span class="font-semibold">120 Assist</span>
+              </p>
+              <div class="text-center mt-2">
+                <button class="w-full text-white font-semibold text-2xl py-2 hover:bg-sky-700 bg-sky-500 text-center my-5 select-btn">Select</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right Side  -->
+        <div class="lg:col-span-4 mt-5 md:mt-0">
+          <div class="overflow-x-auto">
+            <table class="table w-full">
+              <!-- head -->
+              <thead>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th class="text-2xl font-semibold">Selected - <span id="selected-total" class="text-orange-600">0</span></th>
+                </tr>
+              </thead>
+              <tbody id="body-container">
+                <!-- row 1 -->
+              </tbody>
+            </table>
+          </div>
+          <!-- budget  -->
+          <div class="bg-black text-center mt-4 py-5">
+            <h2 class="text-2xl font-bold text-white">Budget</h2>
+            <img class="mx-auto mt-1" src="image/marker.png" alt="" />
+            <div class="mt-4 flex justify-between px-5">
+              <p class="text-white text-xl font-semibold">Per Player :</p>
+              <input class="w-2/4 px-2 py-1 text-black" type="text" id="player-budget" placeholder="player amount" />
+            </div>
+            <button id="calculate" class="text-white font-semibold text-xl py-2 hover:bg-sky-700 bg-sky-500 w-11/12 text-center my-5">Calculate</button>
+            <h1 class="mb-2 text-white text-2xl font-bold">Player Expenses : $<span id="player-expense" class="text-orange-600">00</span></h1>
+            <img class="mx-auto mt-1" src="image/marker.png" alt="" />
+            <div class="my-5 flex justify-between px-5">
+              <p class="text-white text-xl font-semibold">Manager :</p>
+              <input class="w-2/4 px-2 py-1 text-black" type="text" id="manager-amount" placeholder="manager amount" />
+            </div>
+            <div class="flex justify-between px-5">
+              <p class="text-white text-xl font-semibold">Coach :</p>
+              <input class="w-2/4 px-2 py-1 text-black" type="text" id="coach-amount" placeholder="coach amount" />
+            </div>
+            <button id="calculate-total" class="text-white font-semibold text-xl py-2 hover:bg-sky-700 bg-sky-500 w-11/12 text-center my-5">Calculate Total</button>
+            <h1 class="text-white text-2xl font-bold">Total : $<span class="text-orange-600" id="total">00</span></h1>
+            <img class="mx-auto mt-1" src="image/marker.png" alt="" />
+          </div>
+          <!-- budget End  -->
+        </div>
+      </section>
+    </main>
+    <!--This is main section end -->
+  </body>
+</html>
